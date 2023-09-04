@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.backgroupGroup {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: unset;
+  z-index: 0;
+
+  position: fixed;
+}
+
+.mainGroup {
+  
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  position: fixed;
+}
+
+.navigation {
+  display: flex;
+  align-items: left;
+
+  background-color: grey;
+  height: 5vh;
+  width: 100%;
+  padding-left: 0px;
+  border-bottom: 1px solid rgb(110, 109, 121);
+}
+
+.navgroup {
+  width: 50%;
+	height: 100%;
+	background-color: rgb(17, 9, 36);
+	order: 0;
+	display: flex;
+}
+
+.space {
+  top: 5vh;
+  background-color: transparent;
+  height: 50vh;
+  width: 100vh;
+  display: flex;
+}
+
+.bottomText {
+  background: rgb(144,144,144);
+  height: 87.32692581629vw;
+
+  display: flex;
+}
+
+img.test {
+  display: unset;
+  z-index: 0;
+
+  width: 100%;
+
+  display: flex;
+}
