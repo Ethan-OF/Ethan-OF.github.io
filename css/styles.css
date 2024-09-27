@@ -1,0 +1,101 @@
+/* Initial setups. */
+:root
+{
+    --background: #090c10;
+    --primary: #7397f4;
+    --secondary: #310ca0;
+    --accent: #320a87;
+    --text: #e9edf3;
+  
+    /* SCALES */
+    --image_min_width: 300px;
+    --font_size: 1.1em;
+  }
+
+body
+{
+    background-color: var(--background);
+
+    margin: 0px;
+    padding: 0px;
+
+    color: var(--text);
+}
+
+
+/* Positional / declaratory classes. (Allows for quick changes in HTML) */
+.top
+{
+    top: 0px;
+}
+
+.bottom
+{
+    bottom: 0px;
+}
+
+.center
+{
+    align-content: center;
+    justify-content: center;
+}
+
+.center .self
+{
+    align-items: baseline;
+    justify-content: baseline;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.narrow
+{
+    display: flex;
+  
+    width: 80%;
+    align-self: center;
+}
+
+.fixed
+{
+    position: fixed;
+}
+
+.navbuffer
+{
+    height: 6vh;
+    width: 100%;
+}
+
+
+/* Core components. */
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer
+{
+    width: 100%;
+  
+    background-color: var(--background);
+  
+    display: flex;
+  
+    height: 6vh;
+  
+    border-bottom: 0.1vh solid #221f1d;
+  
+    font-size: 2vw;
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer
+{
+    border-bottom: none;
+    border-top: 0.1vh solid #221f1d;
+}
